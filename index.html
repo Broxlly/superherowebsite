@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Sitem 🚀</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background: linear-gradient(135deg, #090979, #6500a8, #00bcd4);
+    }
+    .card {
+      padding: 40px 25px;
+      margin: 20px;
+      max-width: 400px;
+      border: 1px solid #ffffff40;
+      border-radius: 24px;
+      background: #ffffff18;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 40px #0003;
+    }
+    h1 { font-size: 36px; }
+    p { color: #eee; line-height: 1.6; }
+    button {
+      padding: 13px 24px;
+      border: 0;
+      border-radius: 30px;
+      background: white;
+      color: #6500a8;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🚀 Merhaba Dünya!</h1>
+    <p>Bu benim mini web sitem.<br>
+    GitHub Pages ile yayında!</p>
+    <button onclick="selam()">Bana Tıkla ✨</button>
+    <p id="mesaj"></p>
+  </div>
+
+  <script>
+    function selam() {
+      document.getElementById("mesaj").textContent =
+        "🎉 Site başarıyla çalışıyor!";
+    }
+  </script>
+</body>
+</html>
